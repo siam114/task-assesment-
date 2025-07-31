@@ -76,7 +76,7 @@ const TaskDetails = ({ deleteTask, task, updateTask, setSelectedTask, }: Props) 
       </div>
 
       {/* Change Status */}
-      <div className="relative mb-10 max-w-xs">
+      <div className="relative mb-5 max-w-xs">
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
           className="w-full border border-gray-300 px-4 py-2 rounded shadow-sm text-left flex justify-between items-center"

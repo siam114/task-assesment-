@@ -14,7 +14,7 @@ const PageLayout = ({ classNames, children }: Props) => {
                 <img src={"/icons/banner-img-r.png"} className='absolute opacity-15 right-14 -top-8 h-48 w-72' />
                 <img src={"/icons/overlay.svg"} className='absolute -right-35 -top-30 w-xl h-lg' />
             </div>
-            <div className='w-full px-12 h-full mb-10 -mt-24 z-10 relative'>
+            <div className='w-full px-12 h-full mb-1 -mt-40 overflow-auto z-10 relative'>
                 {children}
             </div>
         </div>

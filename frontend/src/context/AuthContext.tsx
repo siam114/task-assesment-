@@ -30,7 +30,7 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
       } else {
         localStorage.removeItem('userData');
         setUser(null);
-        router.replace(`/login`);
+        router.replace(!nonRedirectableToLoginRoutes.includes(pathName) ? `/login` : pathName);
       }
       setLoading(false);
     }).catch(err => {
